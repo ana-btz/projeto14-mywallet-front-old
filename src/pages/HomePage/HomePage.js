@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Record from "../../components/Record/Record";
 import StyledScreen from "../../components/StyledScreen";
 import StyledTextTop from "../../components/StyledTextTop";
@@ -28,14 +29,18 @@ export default function HomePage() {
                     </TotalContainer>
                 </FieldWithContent> */}
                 <ButtonsContainer>
-                    <button>
-                        <ion-icon name="add-circle-outline"></ion-icon>
-                        <p>Nova entrada</p>
-                    </button>
-                    <button>
-                        <ion-icon name="remove-circle-outline"></ion-icon>
-                        <p>Nova saída</p>
-                    </button>
+                    <Link to="/nova-entrada">
+                        <button>
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                            <p>Nova entrada</p>
+                        </button>
+                    </Link>
+                    <Link to="/nova-saida">
+                        <button>
+                            <ion-icon name="remove-circle-outline"></ion-icon>
+                            <p>Nova saída</p>
+                        </button>
+                    </Link>
                 </ButtonsContainer>
             </Container>
         </StyledScreen>

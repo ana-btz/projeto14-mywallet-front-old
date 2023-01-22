@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const StyledLink = styled.p`
+const StyledLink = styled(Link)`
     color: #FFFFFF;
     font-size: 15px;
     font-weight: 700;
